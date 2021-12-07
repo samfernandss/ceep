@@ -1,5 +1,6 @@
 import { Component } from "react";
-import NotesCard from "./NotesCard/NotesCard";
+import NotesCard from "../NotesCard/NotesCard";
+import "./style.css"
 
 class NotesList extends Component {
 	render() {
@@ -7,7 +8,7 @@ class NotesList extends Component {
 			<ul>
 				{ Array.of("Work", "Work", "College").map( (category, index) => {
 					return (
-						<li key={index}>
+						<li key={index} className="notes-list">
 							<div>{ category }</div>
 							<NotesCard></NotesCard>
 						</li>

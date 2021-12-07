@@ -1,7 +1,5 @@
 .note-card {
     color: rgb(165, 129, 199);
-    border: 2px solid rgb(212, 233, 241);
-    border-radius: 10%;
     width: 350px;
-    padding: 0 20px;
+    padding: 0 10px;
 }

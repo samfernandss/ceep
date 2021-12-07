@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './App.css';
-import NotesList from "./components/NotesList";
-import NotesForm from "./components/NotesForm";
+import NotesList from "./components/NotesList/";
+import NotesForm from "./components/NotesForm/";
 
 class App extends Component{
   render() {
