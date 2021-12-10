@@ -6,7 +6,7 @@ class NotesList extends Component {
 	render() {
 		return(
 			<ul>
-				{ Array.of("Work", "Work", "College").map( (category, index) => {
+				{ this.props.notes.map( (category, index) => {
 					return (
 						<li key={index} className="notes-list">
 							<div>{ category }</div>
