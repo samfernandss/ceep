@@ -1,0 +1,53 @@
+form {
+    width: 50%;
+    justify-content: right;
+}
+
+form input {
+    display: block;
+    margin: 20px 10px;
+    width: 80%;
+    border: 2px solid darkviolet;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+form input:focus {
+    border: 2px solid darkviolet;
+    box-shadow: 0 0 25px rgb(235, 213, 250);
+    border-radius: 5px;
+    outline: none !important;
+}
+
+form textarea {
+    display: block;
+    margin: 20px 10px;
+    width: 80%;
+    border: 2px solid darkviolet;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+form textarea:focus {
+    border: 2px solid darkviolet;
+    box-shadow: 0 0 25px rgb(235, 213, 250);
+    border-radius: 5px;
+    outline: none !important;
+}
+
+form button {
+    color: white;
+    font-weight: bold;
+    background-color: indigo;
+    height: 40px;
+    width: 200px;
+    border: 1px solid indigo;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.3s all;
+}
+
+form button:hover {
+    background: darkviolet;
+    border: 1px solid darkviolet;
+}
