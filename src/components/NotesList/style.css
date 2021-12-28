@@ -1,12 +1,18 @@
 ul {
-    width: 90%;
-    margin: 0 20px;
+    width: 80%;
 }
 
-.notes-list {
-    background: white;
-    border: 1px solid darkviolet;
+.note-item {
+    background: #FEF884;
+    border: 1px solid #FFF633;
     border-radius: 7px;
-    padding: 10 20px;
-    margin: 10px 0;
+    margin: 10px;
+    width: auto;
+    display: inline-block;
+    box-shadow: 1px 1px 5px gray;
+    transition: 0.2s all;
+}
+
+.note-item:hover {
+    transform: scale(1.05);
 }

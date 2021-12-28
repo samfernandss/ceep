@@ -5,7 +5,7 @@ import NotesList from "./components/NotesList/";
 
 class App extends Component {
 
-  constructor(){
+  constructor() {
     super();
 
     this.state = {
@@ -13,8 +13,8 @@ class App extends Component {
     };
   }
 
-  createNote(title, description) {
-    const newNote = {title, description};
+  createNote = (title, description) => {
+    const newNote = { title, description };
     const newArrayNotes = [...this.state.notes, newNote];
     const newState = {
       notes: newArrayNotes
@@ -24,17 +24,37 @@ class App extends Component {
     this.setState(newState);
   }
 
+  deleteNote = (index) => {
+    let arrayNotes = this.state.notes;
+    arrayNotes.splice(index, 1);
+    this.setState({ note: arrayNotes });
+    console.log("teste");
+  }
+
   render() {
     return (
-      <section>
-        <NotesForm
-          className="notes-form-container"
-          createNote={this.createNote.bind(this)}></NotesForm>
-        
-        <NotesList
-          className="notes-list-container"
-          notes={this.state.notes}></NotesList>
-      </section>
+      <>
+        <header className="title">
+          <h1>My Notes</h1>
+        </header>
+
+        <hr></hr>
+
+        <section>
+          <NotesForm
+            className="notes-form-container"
+            createNote={this.createNote}
+          />
+
+        <hr className="half-line"></hr>
+
+          <NotesList
+            className="notes-list-container"
+            notes={this.state.notes}
+            deleteNote={this.deleteNote}
+          />
+        </section>
+      </>
     );
   }
 }

@@ -5,15 +5,20 @@ import "./style.css"
 class NotesList extends Component {
 
 	render() {
-		return(
+		return (
 			<ul>
-				{ this.props.notes.map( (note, index) => {
+				{this.props.notes.map((note, index) => {
 					return (
 						<li
 							key={index}
-							className="notes-list">
+							className="note-item">
 
-							<NotesCard title={note.title} description={note.description}></NotesCard>
+							<NotesCard
+								index={index}
+								deleteNote={this.props.deleteNote}
+								title={note.title}
+								description={note.description}
+							/>
 						</li>
 					)
 				})}

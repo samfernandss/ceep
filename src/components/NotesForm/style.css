@@ -5,32 +5,36 @@ form {
 
 form input {
     display: block;
-    margin: 20px 10px;
-    width: 80%;
-    border: 2px solid darkviolet;
+    margin: 20px 0 20px 10px;
+    width: 85%;
+    border: 2px solid #CACACA;
     border-radius: 5px;
     padding: 10px 5px;
 }
 
 form input:focus {
-    border: 2px solid darkviolet;
-    box-shadow: 0 0 25px rgb(235, 213, 250);
+    border: 2px solid #CACACA;
+    box-shadow: 1px 1px 10px #CACACA;
     border-radius: 5px;
     outline: none !important;
 }
 
+form input:hover, textarea:hover {
+    box-shadow: 1px 1px 10px #CACACA;
+}
+
 form textarea {
     display: block;
-    margin: 20px 10px;
-    width: 80%;
-    border: 2px solid darkviolet;
+    margin: 20px 0 20px 10px;
+    width: 85%;
+    border: 2px solid #CACACA;
     border-radius: 5px;
     padding: 10px 5px;
 }
 
 form textarea:focus {
-    border: 2px solid darkviolet;
-    box-shadow: 0 0 25px rgb(235, 213, 250);
+    border: 2px solid #CACACA;
+    box-shadow: 0 0 25px #CACACA;
     border-radius: 5px;
     outline: none !important;
 }
@@ -38,16 +42,18 @@ form textarea:focus {
 form button {
     color: white;
     font-weight: bold;
-    background-color: indigo;
+    background-color: #545454;
     height: 40px;
     width: 200px;
-    border: 1px solid indigo;
+    border: 1px solid #545454;
     border-radius: 5px;
     margin: 10px;
-    transition: 0.3s all;
+    transition: 0.2s all;
 }
 
 form button:hover {
-    background: darkviolet;
-    border: 1px solid darkviolet;
+    background: white;
+    border: 1px solid #545454;
+    color: #545454;
+    transform: scale(1.02);
 }

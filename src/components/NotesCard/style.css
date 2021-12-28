@@ -1,5 +1,28 @@
 .note-card {
-    color: rgb(165, 129, 199);
-    width: 350px;
+    color: black;
+    width: 300px;
     padding: 0 10px;
+    display: inline-block;
+}
+
+.note-card-container {
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+h3 {
+    margin: 10px 10px 0;
+    font-size: 16px;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+p {
+    display: block;
+    margin: 10px;
+    font-size: 12px;
 }
