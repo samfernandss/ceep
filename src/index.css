@@ -1,4 +1,12 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: local('Montserrat'), url('https://fonts.googleapis.com/css?family=Montserrat') format('truetype');
+/* @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url("https://fonts.googleapis.com/css?family=Montserrat") format("truetype");
+} */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    
 }
+
+

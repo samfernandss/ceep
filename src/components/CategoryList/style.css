@@ -1,0 +1,11 @@
+input {
+    border-bottom: 2px solid #cacaca;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20%;
+    background: #4d5656;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s all;
+}

@@ -1,34 +1,36 @@
-* {
-  font-family: 'Montserrat';
-}
-
 body {
-  background: #FBFBFB;
+  background: #4D5656;
 }
 
 .title {
   text-align: center;
-  text-shadow: 1px 1px 2px #CACACA;
+  text-shadow: 1px 1px 2px #EAECEE;
+  background: #424949;
+  color: white;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 hr {
   border: 0.5px solid #CACACA;
+  margin: 0;
+  padding: 0;
 }
 
 section {
   display: flex;
-}
-
-.notes-form-container {
-  width: 50%;
+  justify-content: flex-start;
 }
 
 .half-line {
   transform: rotate(180deg);
-  height: 500px;
+  height: auto;
   border: 0.5px solid #CACACA;
-}
-
-.notes-list-container {
-  width: 50%;
 }

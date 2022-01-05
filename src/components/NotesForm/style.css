@@ -1,59 +1,68 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
 form {
-    width: 50%;
-    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-form input {
-    display: block;
+input, textarea {
+    border-bottom: 2px solid #cacaca;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     margin: 20px 0 20px 10px;
-    width: 85%;
-    border: 2px solid #CACACA;
-    border-radius: 5px;
+    width: 100%;
     padding: 10px 5px;
-}
-
-form input:focus {
-    border: 2px solid #CACACA;
-    box-shadow: 1px 1px 10px #CACACA;
-    border-radius: 5px;
-    outline: none !important;
-}
-
-form input:hover, textarea:hover {
-    box-shadow: 1px 1px 10px #CACACA;
-}
-
-form textarea {
-    display: block;
-    margin: 20px 0 20px 10px;
-    width: 85%;
-    border: 2px solid #CACACA;
-    border-radius: 5px;
-    padding: 10px 5px;
-}
-
-form textarea:focus {
-    border: 2px solid #CACACA;
-    box-shadow: 0 0 25px #CACACA;
-    border-radius: 5px;
-    outline: none !important;
-}
-
-form button {
+    background: #4d5656;
     color: white;
     font-weight: bold;
-    background-color: #545454;
+    transition: 0.2s all;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    text-align: center;
+    border-bottom: 2px solid white;
+    transform: scale(1.03);
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+    text-align: center;
+}
+
+input:not(:focus), textarea:not(:focus) {
+    outline: none;
+    text-align: center;
+}
+
+button {
+    color: #424949;
+    background: white;
+    border: 1px solid #424949;
+    font-weight: bold;
     height: 40px;
     width: 200px;
-    border: 1px solid #545454;
     border-radius: 5px;
     margin: 10px;
     transition: 0.2s all;
 }
 
-form button:hover {
-    background: white;
-    border: 1px solid #545454;
-    color: #545454;
+button:hover {
+    color: white;
+    background: #424949;
+    border: 1px solid white;
     transform: scale(1.02);
+}
+
+button:disabled {
+    cursor: auto;
+    color: white;
+    background-color: #b9b9b9;
+    border: 1px solid #b9b9b9;
+    transform: none;
 }

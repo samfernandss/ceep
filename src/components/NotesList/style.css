@@ -1,15 +1,16 @@
 ul {
-    width: 80%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow: auto;
 }
 
 .note-item {
-    background: #FEF884;
-    border: 1px solid #FFF633;
+    background: #424949;
+    border: 1px solid white;
     border-radius: 7px;
     margin: 10px;
     width: auto;
     display: inline-block;
-    box-shadow: 1px 1px 5px gray;
     transition: 0.2s all;
 }
 

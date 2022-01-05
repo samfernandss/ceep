@@ -22,6 +22,7 @@ class NotesCard extends Component {
                         className="delete-icon"
                         onClick={this.delete}
                     />
+                    <h4>{this.props.category}</h4>
                 </div>
 
                 <p>{this.props.description}</p>

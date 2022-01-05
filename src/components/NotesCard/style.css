@@ -1,5 +1,5 @@
 .note-card {
-    color: black;
+    color: white;
     width: 300px;
     padding: 0 10px;
     display: inline-block;
@@ -19,6 +19,7 @@ h3 {
 
 .delete-icon {
     cursor: pointer;
+    fill: white;
 }
 
 p {
